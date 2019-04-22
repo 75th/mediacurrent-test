@@ -1,7 +1,59 @@
 @import "base/_base.scss";    // Keep at top of file
 @import "_global.scss"; // Keep at top of file
 
+html, body {
+	height: 100%;
+}
 
+body {
+	@include fauna;
+	font-size: 20px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+div.bg {
+	background: url('../images/background.jpg') center top no-repeat;
+	background-size: cover;
+	max-width: 700px;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+
+div.content {
+	flex-shrink: 0;
+	flex-grow: 1;
+}
+
+// Support MacOS native dark mode, even for users without JavaScript
+
+@include light-mode;
+
+@media (prefers-color-scheme: dark) {
+	@include dark-mode;
+}
+
+body.light {
+	@include light-mode;
+}
+
+body.dark {
+	@include dark-mode;
+}
+
+
+// Don't show color toggle buttons to users without JS
+body:not(.js) .color-modes {
+	display: none;
+}
+
+.color-modes button {
+	span {
+		display: none;
+	}
+}
 
 
 
