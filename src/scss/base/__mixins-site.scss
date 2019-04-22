@@ -1,5 +1,13 @@
 @mixin light-mode {
+	color: $blue;
 
+	div.content {
+		background-color: $gray-light;
+	}
+
+	hr {
+		border-bottom-color: $blue;
+	}
 }
 
 @mixin dark-mode {

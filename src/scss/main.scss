@@ -25,14 +25,43 @@ div.bg {
 div.content {
 	flex-shrink: 0;
 	flex-grow: 1;
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+}
+
+h2, h1 {
+	margin: 0px;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 1.2;
+}
+
+h1 {
+	@include playfair;
+	font-size: 98px;
+	line-height: 1.1;
+}
+
+hr {
+	border: 0px none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	max-width: 250px;
+	margin: 30px 0px;
 }
 
 // Support MacOS native dark mode, even for users without JavaScript
 
-@include light-mode;
+body {
+	@include light-mode;
 
-@media (prefers-color-scheme: dark) {
-	@include dark-mode;
+	@media (prefers-color-scheme: dark) {
+		@include dark-mode;
+	}
 }
 
 body.light {
