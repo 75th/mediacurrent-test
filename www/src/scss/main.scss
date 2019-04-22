@@ -19,15 +19,35 @@ div.bg {
 	background-size: cover;
 	max-width: 700px;
 	flex-shrink: 1;
-	flex-grow: 1;
+	flex-grow: 2;
 }
 
 div.content {
 	flex-shrink: 0;
 	flex-grow: 1;
 	display: grid;
-	grid-template-columns: repeat(16, 1fr);
-	grid-template-rows: repeat(16, 1fr);
+	grid-template-columns: 40px repeat(14, 1fr) 40px;
+	grid-template-rows: 20px repeat(14, 1fr) 20px;
+}
+
+nav {
+	grid-area: 2 / 2 / 4 / 16;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a.logo {
+	display: block;
+	transform: translateX(-15%);
+}
+
+main {
+	grid-area: 4 / 2 / 14 / 16;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
 }
 
 h2, h1 {
@@ -50,8 +70,13 @@ hr {
 	border: 0px none;
 	border-bottom-width: 4px;
 	border-bottom-style: solid;
-	max-width: 250px;
+	width: 250px;
+	max-width: 100%;
 	margin: 30px 0px;
+
+	+ p {
+		margin-top: 0px;
+	}
 }
 
 // Support MacOS native dark mode, even for users without JavaScript
