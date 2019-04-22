@@ -17,403 +17,403 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
-	"/compiled/css/main.css": {
+	"/www/compiled/css/main.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/compiled/css/main-min.css",
+		"oAP": "/www/compiled/css/main-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/compiled/css/main.css.map": {
+	"/www/compiled/css/main.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/compiled/css/main.css.map",
+		"oAP": "/www/compiled/css/main.css.map",
 		"oF": 0
 		},
-	"/compiled/images/background.jpg": {
+	"/www/compiled/images/background.jpg": {
 		"ft": 16384,
 		"iS": 434884,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/compiled/images/background.jpg",
+		"oAP": "/www/compiled/images/background.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent-60@2x.png": {
+	"/www/compiled/images/icons/mediacurrent-60@2x.png": {
 		"ft": 32768,
 		"iS": 3213,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent-60@2x.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent-60@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent-60@3x.png": {
+	"/www/compiled/images/icons/mediacurrent-60@3x.png": {
 		"ft": 32768,
 		"iS": 4692,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent-60@3x.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent-60@3x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent-72.png": {
+	"/www/compiled/images/icons/mediacurrent-72.png": {
 		"ft": 32768,
 		"iS": 2022,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent-72.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent-72.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent-72@2x.png": {
+	"/www/compiled/images/icons/mediacurrent-72@2x.png": {
 		"ft": 32768,
 		"iS": 3875,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent-72@2x.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent-72@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent-76.png": {
+	"/www/compiled/images/icons/mediacurrent-76.png": {
 		"ft": 32768,
 		"iS": 2101,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent-76.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent-76.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent-76@2x.png": {
+	"/www/compiled/images/icons/mediacurrent-76@2x.png": {
 		"ft": 32768,
 		"iS": 4015,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent-76@2x.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent-76@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent-83.5@2x.png": {
+	"/www/compiled/images/icons/mediacurrent-83.5@2x.png": {
 		"ft": 32768,
 		"iS": 4371,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent-83.5@2x.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent-83.5@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent.png": {
+	"/www/compiled/images/icons/mediacurrent.png": {
 		"ft": 32768,
 		"iS": 1536,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/mediacurrent@2x.png": {
+	"/www/compiled/images/icons/mediacurrent@2x.png": {
 		"ft": 32768,
 		"iS": 3049,
 		"oA": 0,
-		"oAP": "/compiled/images/icons/mediacurrent@2x.png",
+		"oAP": "/www/compiled/images/icons/mediacurrent@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/compiled/images/icons/pinned-tab-icon.svg": {
+	"/www/compiled/images/icons/pinned-tab-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/compiled/images/icons/pinned-tab-icon.svg",
+		"oAP": "/www/compiled/images/icons/pinned-tab-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/compiled/images/logo.svg": {
+	"/www/compiled/images/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/compiled/images/logo.svg",
+		"oAP": "/www/compiled/images/logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/compiled/images/mode-icon.svg": {
+	"/www/compiled/images/mode-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/compiled/images/mode-icon.svg",
+		"oAP": "/www/compiled/images/mode-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/compiled/js/main.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/compiled/js/min/main.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/compiled/js/main.min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/compiled/js/main.min.js.map",
-		"oF": 0
-		},
-	"/favicon.ico": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/favicon.ico",
-		"oF": 0
-		},
-	"/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/index.html",
-		"oF": 0
-		},
-	"/mockups/dark-mid.png": {
-		"ft": 32768,
-		"iS": 268485,
-		"oA": 0,
-		"oAP": "/mockups/dark-mid.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/mockups/dark-narrow.png": {
-		"ft": 32768,
-		"iS": 131579,
-		"oA": 0,
-		"oAP": "/mockups/dark-narrow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/mockups/dark-wide.png": {
-		"ft": 32768,
-		"iS": 1244124,
-		"oA": 0,
-		"oAP": "/mockups/dark-wide.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/mockups/font-annotations-narrow.png": {
-		"ft": 32768,
-		"iS": 160152,
-		"oA": 0,
-		"oAP": "/mockups/font-annotations-narrow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/mockups/font-annotations.png": {
-		"ft": 32768,
-		"iS": 1273095,
-		"oA": 0,
-		"oAP": "/mockups/font-annotations.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/mockups/light-mid.png": {
-		"ft": 32768,
-		"iS": 269881,
-		"oA": 0,
-		"oAP": "/mockups/light-mid.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/mockups/light-narrow.png": {
-		"ft": 32768,
-		"iS": 133503,
-		"oA": 0,
-		"oAP": "/mockups/light-narrow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/mockups/light-wide.png": {
-		"ft": 32768,
-		"iS": 1244052,
-		"oA": 0,
-		"oAP": "/mockups/light-wide.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/js/main.js": {
+	"/www/compiled/js/main.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/compiled/js/main.min.js",
+		"oAP": "/www/compiled/js/main.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/www/compiled/js/main.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/www/compiled/js/main.min.js.map",
+		"oF": 0
+		},
+	"/www/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/www/favicon.ico",
+		"oF": 0
+		},
+	"/www/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/www/index.html",
+		"oF": 0
+		},
+	"/www/mockups/dark-mid.png": {
+		"ft": 32768,
+		"iS": 268485,
+		"oA": 0,
+		"oAP": "/www/mockups/dark-mid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/www/mockups/dark-narrow.png": {
+		"ft": 32768,
+		"iS": 131579,
+		"oA": 0,
+		"oAP": "/www/mockups/dark-narrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/www/mockups/dark-wide.png": {
+		"ft": 32768,
+		"iS": 1244124,
+		"oA": 0,
+		"oAP": "/www/mockups/dark-wide.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/www/mockups/font-annotations-narrow.png": {
+		"ft": 32768,
+		"iS": 160152,
+		"oA": 0,
+		"oAP": "/www/mockups/font-annotations-narrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/www/mockups/font-annotations.png": {
+		"ft": 32768,
+		"iS": 1273095,
+		"oA": 0,
+		"oAP": "/www/mockups/font-annotations.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/www/mockups/light-mid.png": {
+		"ft": 32768,
+		"iS": 269881,
+		"oA": 0,
+		"oAP": "/www/mockups/light-mid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/www/mockups/light-narrow.png": {
+		"ft": 32768,
+		"iS": 133503,
+		"oA": 0,
+		"oAP": "/www/mockups/light-narrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/www/mockups/light-wide.png": {
+		"ft": 32768,
+		"iS": 1244052,
+		"oA": 0,
+		"oAP": "/www/mockups/light-wide.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/www/src/js/main.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/www/compiled/js/main.min.js",
 		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
-	"/src/scss/_global.scss": {
-		"aP": 0,
+	"/www/src/scss/_global.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "/src/css/_global.css",
+		"oAP": "/www/compiled/css/_global.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/_responsive.scss": {
-		"aP": 0,
+	"/www/src/scss/_responsive.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "/src/css/_responsive.css",
+		"oAP": "/www/compiled/css/_responsive.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/base/__colors.scss": {
-		"aP": 0,
+	"/www/src/scss/base/__colors.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "/src/scss/css/__colors.css",
+		"oAP": "/www/src/compiled/css/__colors.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/base/__dimensions.scss": {
-		"aP": 0,
+	"/www/src/scss/base/__dimensions.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "/src/scss/css/__dimensions.css",
+		"oAP": "/www/src/compiled/css/__dimensions.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/base/__fonts.scss": {
-		"aP": 0,
+	"/www/src/scss/base/__fonts.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "/src/scss/css/__fonts.css",
+		"oAP": "/www/src/compiled/css/__fonts.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/base/__mixins-generic.scss": {
-		"aP": 0,
+	"/www/src/scss/base/__mixins-generic.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "/src/scss/css/__mixins-generic.css",
+		"oAP": "/www/src/compiled/css/__mixins-generic.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/base/__mixins-site.scss": {
-		"aP": 0,
+	"/www/src/scss/base/__mixins-site.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "/src/scss/css/__mixins-site.css",
+		"oAP": "/www/src/compiled/css/__mixins-site.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/base/_base.scss": {
-		"aP": 0,
+	"/www/src/scss/base/_base.scss": {
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 1,
-		"oAP": "/src/scss/css/_base.css",
+		"oAP": "/www/src/compiled/css/_base.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/base/README.md": {
+	"/www/src/scss/base/README.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -423,7 +423,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/src/scss/base/README.html",
+		"oAP": "/www/src/scss/base/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -432,7 +432,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/src/scss/main.scss": {
+	"/www/src/scss/main.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -440,7 +440,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/compiled/css/main.css",
+		"oAP": "/www/compiled/css/main.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
@@ -2322,15 +2322,15 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
-		"autoOutputPathRelativePath": "/min",
+		"autoOutputPathFilenamePattern": "*.min.js",
+		"autoOutputPathRelativePath": "../../compiled/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 2,
 		"bundleFormat": 0,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
+		"syntaxCheckerStyle": 3,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
@@ -2428,15 +2428,15 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathRelativePath": "../../compiled/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
