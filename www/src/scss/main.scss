@@ -168,6 +168,7 @@ hr {
 // Some duplicate code here, but the link button and color buttons
 // have enough differences that I think it's okay
 main a {
+	$box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
 	font-size: 20px;
 	line-height: 20px;
 	display: inline-block;
@@ -175,7 +176,7 @@ main a {
 	border-radius: 10000px;
 	border: 1px solid var(--button-border-c);
 	background-color: var(--link-button-bgc);
-	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+	box-shadow: $box-shadow;
 	padding: 20px 34px;
 	outline: none;
 	transition: all var(--transition-duration);
@@ -184,13 +185,18 @@ main a {
 		text-decoration: none;
 		color: var(--text-c);
 
+		&:focus {
+			box-shadow: 0px 0px 0px 2px var(--button-border-c);
+		}
+
 		&:hover, &:active {
 			color: var(--button-hover-c);
 			background-color: var(--button-hover-bgc);
-		}
 
-		&:focus {
-			box-shadow: 0px 0px 0px 2px var(--white);
+			// Go back to normal shadow when hovering while focused
+			&, &:focus {
+				box-shadow: $box-shadow;
+			}
 		}
 	}
 }
