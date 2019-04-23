@@ -17,6 +17,94 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/mockups/dark-mid.png": {
+		"ft": 32768,
+		"iS": 268485,
+		"oA": 0,
+		"oAP": "/mockups/dark-mid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/mockups/dark-narrow.png": {
+		"ft": 32768,
+		"iS": 131579,
+		"oA": 0,
+		"oAP": "/mockups/dark-narrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/mockups/dark-wide.png": {
+		"ft": 32768,
+		"iS": 1244124,
+		"oA": 0,
+		"oAP": "/mockups/dark-wide.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/mockups/font-annotations-narrow.png": {
+		"ft": 32768,
+		"iS": 160152,
+		"oA": 0,
+		"oAP": "/mockups/font-annotations-narrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/mockups/font-annotations.png": {
+		"ft": 32768,
+		"iS": 1273095,
+		"oA": 0,
+		"oAP": "/mockups/font-annotations.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/mockups/light-mid.png": {
+		"ft": 32768,
+		"iS": 269881,
+		"oA": 0,
+		"oAP": "/mockups/light-mid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/mockups/light-narrow.png": {
+		"ft": 32768,
+		"iS": 133503,
+		"oA": 0,
+		"oAP": "/mockups/light-narrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/mockups/light-wide.png": {
+		"ft": 32768,
+		"iS": 1244052,
+		"oA": 0,
+		"oAP": "/mockups/light-wide.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/www/compiled/css/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -209,94 +297,6 @@
 		"oA": 0,
 		"oAP": "/www/index.html",
 		"oF": 0
-		},
-	"/www/mockups/dark-mid.png": {
-		"ft": 32768,
-		"iS": 268485,
-		"oA": 0,
-		"oAP": "/www/mockups/dark-mid.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/www/mockups/dark-narrow.png": {
-		"ft": 32768,
-		"iS": 131579,
-		"oA": 0,
-		"oAP": "/www/mockups/dark-narrow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/www/mockups/dark-wide.png": {
-		"ft": 32768,
-		"iS": 1244124,
-		"oA": 0,
-		"oAP": "/www/mockups/dark-wide.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/www/mockups/font-annotations-narrow.png": {
-		"ft": 32768,
-		"iS": 160152,
-		"oA": 0,
-		"oAP": "/www/mockups/font-annotations-narrow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/www/mockups/font-annotations.png": {
-		"ft": 32768,
-		"iS": 1273095,
-		"oA": 0,
-		"oAP": "/www/mockups/font-annotations.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/www/mockups/light-mid.png": {
-		"ft": 32768,
-		"iS": 269881,
-		"oA": 0,
-		"oAP": "/www/mockups/light-mid.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/www/mockups/light-narrow.png": {
-		"ft": 32768,
-		"iS": 133503,
-		"oA": 0,
-		"oAP": "/www/mockups/light-narrow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/www/mockups/light-wide.png": {
-		"ft": 32768,
-		"iS": 1244052,
-		"oA": 0,
-		"oAP": "/www/mockups/light-wide.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/www/src/js/main.js": {
 		"bF": 0,

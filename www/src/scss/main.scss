@@ -7,18 +7,25 @@ html, body {
 
 body {
 	@include fauna;
+	--transition-duration: 0s;
+	--blue: #{$blue};
+	--blue-dark: #{$blue-dark};
+	--gray-light: #{$gray-light};
+	--white: #{$white};
+	--black: #{$black};
 	color: var(--text-c);
-	--transition-duration: 500ms;
 	font-size: 20px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: stretch;
+	transition: color var(--transition-duration);
 }
 
 div.bg {
 	background: url('../images/background.jpg') center top no-repeat;
 	background-size: cover;
+	min-width: 300px;
 	max-width: 700px;
 	flex-shrink: 1;
 	flex-grow: 2;
@@ -26,17 +33,22 @@ div.bg {
 
 div.content {
 	background-color: var(--content-bgc);
+	transition: background-color var(--transition-duration);
 	flex-shrink: 0;
 	flex-grow: 1;
 	display: grid;
 
 	// See base/__dimensions.scss for explanations of these and other variables
 	grid-template-columns: $content-offset-w  1fr  $content-offset-e;
-	grid-template-rows: $content-offset-n  $color-button-y  1fr  $color-button-y  $content-offset-s;
+
+	// Split the logo into two rows, since the main content appears to be
+	// vertically centered between the midpoint of the logo and the bottom
+	// of the page
+	grid-template-rows: $content-offset-n  floor($color-button-y / 2)  ceil($color-button-y / 2)  1fr  $color-button-y  $content-offset-s;
 }
 
 nav {
-	grid-area: 2 / 2 / span 1 / span 1;
+	grid-area: 2 / 2 / span 2 / span 1;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -44,6 +56,7 @@ nav {
 
 	svg g {
 		fill: var(--logo-c);
+		transition: fill var(--transition-duration);
 	}
 }
 
@@ -59,6 +72,7 @@ nav {
 		font-size: 16px;
 		color: var(--text-c);
 		background: transparent;
+		transition: background-color var(--transition-duration), color var(--transition-duration);
 		border: $color-button-border-width solid var(--button-border-c);
 		border-radius: 10000px; // Large value creates the pill shape automatically
 		height: 100%;
@@ -101,6 +115,7 @@ nav {
 
 a.logo {
 	display: block;
+	outline-color: var(--button-border-c);
 
 	// Align letter m to left margin, not the swoosh. The width from the
 	// swoosh's left end to the letter's left end is 15% of total icon width
@@ -114,7 +129,7 @@ a.logo {
 }
 
 main {
-	grid-area: 3 / 2 / span 1 / span 1;
+	grid-area: 3 / 2 / span 4 / span 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -140,20 +155,46 @@ h1 {
 hr {
 	border: 0px none;
 	border-bottom: 4px solid var(--separator-c);
+	transition: border-color var(--transition-duration);
 	width: 250px;
 	max-width: 100%;
-	margin: 30px 0px;
+	margin: 30px 0px 40px;
 
 	+ p {
 		margin-top: 0px;
 	}
 }
 
+// Some duplicate code here, but the link button and color buttons
+// have enough differences that I think it's okay
+main a {
+	font-size: 20px;
+	line-height: 20px;
+	display: inline-block;
+	margin-top: 16px;
+	border-radius: 10000px;
+	border: 1px solid var(--button-border-c);
+	background-color: var(--link-button-bgc);
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+	padding: 20px 34px;
+	outline: none;
+	transition: all var(--transition-duration);
 
-// Color mode support. First, turn on transitions when the mode is switching
-body.mode-shifting {
-	@include mode-transitions;
+	&:link, &:visited {
+		text-decoration: none;
+		color: var(--text-c);
+
+		&:hover, &:active {
+			color: var(--button-hover-c);
+			background-color: var(--button-hover-bgc);
+		}
+
+		&:focus {
+			box-shadow: 0px 0px 0px 2px var(--white);
+		}
+	}
 }
+
 
 // Support MacOS native dark mode, even for users without JavaScript
 body {
@@ -173,7 +214,6 @@ body.light {
 body.dark {
 	@include dark-mode;
 }
-
 
 // Don't show color toggle buttons to users without JS
 body:not(.js) .color-modes {
