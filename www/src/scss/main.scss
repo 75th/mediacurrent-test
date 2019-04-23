@@ -7,6 +7,7 @@ html, body {
 
 body {
 	@include fauna;
+	color: var(--text-c);
 	--transition-duration: 500ms;
 	font-size: 20px;
 	display: flex;
@@ -24,6 +25,7 @@ div.bg {
 }
 
 div.content {
+	background-color: var(--content-bgc);
 	flex-shrink: 0;
 	flex-grow: 1;
 	display: grid;
@@ -39,23 +41,40 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	height: $color-button-y;
+
+	svg g {
+		fill: var(--logo-c);
+	}
 }
 
 .color-modes {
 	height: $color-button-y;
+	position: relative;
 
 	button {
 		@include fauna;
+		position: absolute;
+		top: 0px;
+		right: 0px;
 		font-size: 16px;
-		color: $blue;
-		background-image: none;
-		border-width: $color-button-border-width;
-		border-style: solid;
+		color: var(--text-c);
+		background: transparent;
+		border: $color-button-border-width solid var(--button-border-c);
 		border-radius: 10000px; // Large value creates the pill shape automatically
 		height: 100%;
 		padding: $color-button-pn  $color-button-pe  $color-button-ps  $color-button-pw;
 		line-height: $color-icon-y;
 		cursor: pointer;
+		outline: none;
+
+		&:focus, &:active {
+			box-shadow: 0px 0px 0px 2px var(--button-border-c);
+		}
+
+		&:hover {
+			color: var(--button-hover-c);
+			background-color: var(--button-hover-bgc);
+		}
 
 
 		span {
@@ -120,8 +139,7 @@ h1 {
 
 hr {
 	border: 0px none;
-	border-bottom-width: 4px;
-	border-bottom-style: solid;
+	border-bottom: 4px solid var(--separator-c);
 	width: 250px;
 	max-width: 100%;
 	margin: 30px 0px;
@@ -132,27 +150,28 @@ hr {
 }
 
 
+// Color mode support. First, turn on transitions when the mode is switching
+body.mode-shifting {
+	@include mode-transitions;
+}
+
 // Support MacOS native dark mode, even for users without JavaScript
 body {
 	@include light-mode;
 
-	@media (prefers-color-scheme: dark) {
-		@include dark-mode;
+	&:not(.dark):not(.light) { // Animation in Safari is janky without this line
+		@media (prefers-color-scheme: dark) {
+			@include dark-mode;
+		}
 	}
 }
 
 body.light {
 	@include light-mode;
-	button.to-light {
-		display: none;
-	}
 }
 
 body.dark {
 	@include dark-mode;
-	button.to-dark {
-		display: none;
-	}
 }
 
 
@@ -160,17 +179,6 @@ body.dark {
 body:not(.js) .color-modes {
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

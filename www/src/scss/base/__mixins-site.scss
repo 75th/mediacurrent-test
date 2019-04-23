@@ -1,29 +1,97 @@
 @mixin light-mode {
-	color: $blue;
-
-	div.content {
-		background-color: $gray-light;
-	}
-
-	hr {
-		border-bottom-color: $blue;
-	}
+	--text-c: #{$blue};
+	--content-bgc: #{$gray-light};
+	--button-border-c: #{$blue};
+	--button-hover-bgc: #{$blue};
+	--button-hover-c: #{$white};
+	--logo-c: #{$blue};
+	--separator-c: #{$blue};
 
 	.color-modes button {
-		border-color: $blue;
-		background-color: transparent;
-
 		&:hover {
-			background-color: $blue;
-			color: white;
-
 			span::before {
 				filter: grayscale(1.0) brightness(10000%);
 			}
 		}
 	}
+
+	button.to-light {
+		display: none;
+		opacity: 0;
+	}
+
+	button.to-dark {
+		display: block;
+		opacity: 1;
+	}
+
+	&.mode-shifting {
+		button.to-light {
+			display: block;
+		}
+	}
 }
 
 @mixin dark-mode {
+	--text-c: #{$white};
+	--content-bgc: #{$blue};
+	--button-border-c: #{$white};
+	--button-hover-bgc: #{$white};
+	--button-hover-c: #{$blue};
+	--logo-c: #{$white};
+	--separator-c: #{$white};
 
+	.color-modes button {
+		span::before {
+			filter: grayscale(1.0) brightness(10000%);
+		}
+
+		&:hover span::before {
+			filter: none;
+		}
+	}
+
+	button.to-dark {
+		display: none;
+		opacity: 0;
+	}
+
+	button.to-light {
+		display: block;
+		opacity: 1;
+	}
+
+	&.mode-shifting {
+		button.to-dark {
+			display: block;
+		}
+	}
+}
+
+// Put the transitions in a mixin, even though it's only used once,
+// to keep them near the colors above
+@mixin mode-transitions {
+	$td: 'var(--transition-duration)';
+
+	transition: color #{$td};
+
+	nav svg g {
+		transition: fill #{$td};
+	}
+
+	div.content {
+		transition: background-color #{$td};
+	}
+
+	hr {
+		transition: border-color #{$td};
+	}
+
+	.color-modes button {
+		transition: border-color #{$td}, background-color #{$td}, opacity #{$td};
+
+		&:hover {
+			transition: background-color #{$td}, color #{$td};
+		}
+	}
 }
