@@ -7,6 +7,7 @@ html, body {
 
 body {
 	@include fauna;
+	--transition-duration: 500ms;
 	font-size: 20px;
 	display: flex;
 	flex-direction: row-reverse;
@@ -26,28 +27,79 @@ div.content {
 	flex-shrink: 0;
 	flex-grow: 1;
 	display: grid;
-	grid-template-columns: 40px repeat(14, 1fr) 40px;
-	grid-template-rows: 20px repeat(14, 1fr) 20px;
+
+	// See base/__dimensions.scss for explanations of these and other variables
+	grid-template-columns: $content-offset-w  1fr  $content-offset-e;
+	grid-template-rows: $content-offset-n  $color-button-y  1fr  $color-button-y  $content-offset-s;
 }
 
 nav {
-	grid-area: 2 / 2 / 4 / 16;
+	grid-area: 2 / 2 / span 1 / span 1;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: $color-button-y;
+}
+
+.color-modes {
+	height: $color-button-y;
+
+	button {
+		@include fauna;
+		font-size: 16px;
+		color: $blue;
+		background-image: none;
+		border-width: $color-button-border-width;
+		border-style: solid;
+		border-radius: 10000px; // Large value creates the pill shape automatically
+		height: 100%;
+		padding: $color-button-pn  $color-button-pe  $color-button-ps  $color-button-pw;
+		line-height: $color-icon-y;
+		cursor: pointer;
+
+
+		span {
+			display: block;
+			width: 100%;
+			height: 100%;
+			white-space: nowrap;
+
+			&::before {
+				content: url('../images/mode-icon.svg');
+				display: inline-block;
+				width: $color-icon-x;
+				height: $color-icon-y;
+				vertical-align: middle;
+				margin-right: $color-button-pw - 2px;
+			}
+		}
+	}
+
+	span span {
+		display: none;
+	}
 }
 
 a.logo {
 	display: block;
+
+	// Align letter m to left margin, not the swoosh. The width from the
+	// swoosh's left end to the letter's left end is 15% of total icon width
 	transform: translateX(-15%);
+
+	svg {
+		display: block;
+		height: $logo-y;
+		width: auto;
+	}
 }
 
 main {
-	grid-area: 4 / 2 / 14 / 16;
+	grid-area: 3 / 2 / span 1 / span 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: start;
+	align-items: flex-start;
 }
 
 h2, h1 {
@@ -79,8 +131,8 @@ hr {
 	}
 }
 
-// Support MacOS native dark mode, even for users without JavaScript
 
+// Support MacOS native dark mode, even for users without JavaScript
 body {
 	@include light-mode;
 
@@ -91,22 +143,22 @@ body {
 
 body.light {
 	@include light-mode;
+	button.to-light {
+		display: none;
+	}
 }
 
 body.dark {
 	@include dark-mode;
+	button.to-dark {
+		display: none;
+	}
 }
 
 
 // Don't show color toggle buttons to users without JS
 body:not(.js) .color-modes {
 	display: none;
-}
-
-.color-modes button {
-	span {
-		display: none;
-	}
 }
 
 

@@ -1,32 +1,11 @@
-$columns: 12;                   // Number of columns the design is based around
-
-$desktop-large-min-max: 1200px; // The largest you want the large desktop size
-                                // to kick in at, scaling up
-$desktop-small-min-max: 980px;  // The largest you want the small desktop size
-                                // to end at, scaling down
-$tablet-min-max: 768px;         // The largest you want the tablet size to end
-                                // at, scaling down
-
-$column-factor: 5;              // The number you want all column widths to be
-                                // divisible by
-
-// The three lines below figure out what column width fits the right number of
-// columns, based on the variables above
-
-$desktop-large-column-x: floor($desktop-large-min-max / $columns) - (floor($desktop-large-min-max / $columns) % $column-factor);
-$desktop-small-column-x: floor($desktop-small-min-max / $columns) - (floor($desktop-small-min-max / $columns) % $column-factor);
-$tablet-column-x: floor($tablet-min-max / $columns) - (floor($tablet-min-max / $columns) % $column-factor);
-
-$desktop-large-min: ($desktop-large-column-x * $columns);
+$desktop-large-min: 1200px;
 	$desktop-small-max: ($desktop-large-min - 1px);
 
-$desktop-small-min: ($desktop-small-column-x * $columns);
+$desktop-small-min: 980px;
 	$tablet-max: ($desktop-small-min - 1px);
 
-$tablet-min: ($tablet-column-x * $columns);
-	$mobile-large-max: ($tablet-min - 1px);
-
-$mobile-max: ($tablet-min - 1px);
+$tablet-min: 600px;
+	$mobile-max: ($tablet-min - 1px);
 
 
 
@@ -54,9 +33,21 @@ $mobile-max: ($tablet-min - 1px);
 //   border-box model this theme uses everywhere by default, but also sometimes in the
 //   content-box model)
 
+// "Padding" around the content container, which doesn't actually use CSS padding
+$content-offset-n: 58px;
+$content-offset-s: $content-offset-n;
+$content-offset-w: 70px;
+$content-offset-e: 63px;
+
+$color-button-y: 54px;
+$color-button-border-width: 1px;
+$color-icon-x: 32px;
+$color-icon-y: $color-icon-x;
+$color-button-p: ($color-button-y - ($color-button-border-width * 2) - $color-icon-y) / 2;
+$color-button-pn: floor($color-button-p);
+$color-button-ps: ceil($color-button-p);
+$color-button-pw: floor($color-button-p) + 3px;
+$color-button-pe: $color-button-pw + 10px;
 
 
-$footer-y: 200px;
-
-$admin-menu-y: 29px;
-$admin-menu-shortcut-y: 34px;
+$logo-y: $color-button-y - 1px; // Logo in mockup is 1px shorter than buttons

@@ -8,6 +8,20 @@
 	hr {
 		border-bottom-color: $blue;
 	}
+
+	.color-modes button {
+		border-color: $blue;
+		background-color: transparent;
+
+		&:hover {
+			background-color: $blue;
+			color: white;
+
+			span::before {
+				filter: grayscale(1.0) brightness(10000%);
+			}
+		}
+	}
 }
 
 @mixin dark-mode {
