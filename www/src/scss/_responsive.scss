@@ -14,7 +14,7 @@
 
 // Tablet and lower
 
-@media only screen and (max-width: $tablet-max) {
+@media (max-width: $tablet-max) {
 	body {
 		flex-direction: column-reverse;
 	}
@@ -34,7 +34,7 @@
 
 // Mobile
 
-@media only screen and (max-width: $mobile-max) {
+@media (max-width: $mobile-max) {
 	body {
 		--content-offset-n: 45px;
 		--content-offset-w: 26px;
@@ -53,5 +53,12 @@
 	h1 {
 		font-size: 72px;
 		padding-right: 0px;
+	}
+}
+
+// Some separation between logo and color button on old narrow phones
+@media (max-width: 374px) {
+	a.logo {
+		margin-bottom: 20px;
 	}
 }
