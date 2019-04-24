@@ -3,7 +3,11 @@ var $$ = document.querySelectorAll.bind(document);
 
 (() => {
 	var $body = $('body');
-	$body.classList.add('js');
+
+	// Add buttons
+	$('div.color-modes').innerHTML =
+		'<button class="to-dark"><span>Dark Mode</button><button class="to-light"><span>Light Mode</span></button>'
+	;
 
 	// Keep track of whether the user has manually chosen a color scheme,
 	// so we can stop monitoring the OS setting in the middle of a session.

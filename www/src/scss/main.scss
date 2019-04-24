@@ -242,11 +242,5 @@ body.dark {
 	@include dark-mode;
 }
 
-// Don't show color toggle buttons to users without JS
-body:not(.js) .color-modes {
-	display: none;
-}
-
-
 
 @import "_responsive.scss"; // Keep at bottom of file
