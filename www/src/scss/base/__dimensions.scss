@@ -1,0 +1,45 @@
+$desktop-min: 1000px;
+	$tablet-max: $desktop-min - 1px;
+
+$tablet-min: 600px;
+	$mobile-max: $tablet-min - 1px;
+
+
+
+// I use shorthand suffixes for some/most variable names in this file.
+//
+// n  = top (north)
+// s  = bottom (south)
+// w  = left (west)
+// e  = right (east)
+//
+// x  = x-axis, horizontal, width, both 'w' and 'e'
+// y  = y-axis, vertical, height, both 'n' and 's'
+//
+// m  = margin
+// p  = padding
+// fs = font-size
+// lh = line-height
+// d  = delta (difference)
+//
+// The suffixes can be combined. Examples:
+// $nav-px = Nav padding-left and padding-right
+// $footer-my = Footer margin-top and margin-bottom
+// $sidebar-pn = Sidebar padding-top
+// $header-y = Total header height (usually including padding and border, as implied by the
+//   border-box model this theme uses everywhere by default, but also sometimes in the
+//   content-box model)
+
+$color-button-y: 54px;
+$color-button-border-width: 1px;
+$color-icon-x: 30px;
+$color-icon-y: $color-icon-x;
+$color-button-p: ($color-button-y - ($color-button-border-width * 2) - $color-icon-y) / 2;
+$color-button-pn: floor($color-button-p);
+$color-button-ps: ceil($color-button-p);
+$color-button-pw: floor($color-button-p) + 3px;
+$color-button-pe: $color-button-pw + 10px;
+
+$logo-y: 53px;
+
+$tablet-bg-y: 20vh;

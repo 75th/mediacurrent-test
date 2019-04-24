@@ -1,0 +1,64 @@
+///////////////////
+// Media Queries //
+///////////////////
+
+// Tablet only
+
+@media only screen and (max-width: $tablet-max) and (min-width: $tablet-min) {
+	body {
+		--content-offset-n: 48px;
+		--content-offset-w: 44px;
+		--content-offset-e: 45px;
+	}
+}
+
+// Tablet and lower
+
+@media (max-width: $tablet-max) {
+	body {
+		flex-direction: column-reverse;
+	}
+
+	div.bg {
+		min-width: 0px;
+		max-width: none;
+		height: $tablet-bg-y;
+		flex-grow: 0;
+		background-position: center 45%;
+	}
+
+	div.content {
+		min-height: 100vh - $tablet-bg-y;
+	}
+}
+
+// Mobile
+
+@media (max-width: $mobile-max) {
+	body {
+		--content-offset-n: 45px;
+		--content-offset-w: 26px;
+		--content-offset-e: 24px;
+		font-size: 18px;
+	}
+
+	a.logo {
+		transform: translateX(-2px);
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h1 {
+		font-size: 72px;
+		padding-right: 0px;
+	}
+}
+
+// Some separation between logo and color button on old narrow phones
+@media (max-width: 374px) {
+	a.logo {
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,11 @@
+$sans-serif-fallback: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+@mixin fauna {
+	font-family: 'Fauna One', serif;
+	font-weight: normal;
+}
+
+@mixin playfair {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}

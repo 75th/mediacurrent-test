@@ -1,0 +1,68 @@
+@mixin light-mode {
+	--text-c: var(--blue);
+	--content-bgc: var(--gray-light);
+	--button-border-c: var(--blue);
+	--button-hover-bgc: var(--blue);
+	--button-hover-c: var(--white);
+	--logo-c: var(--blue);
+	--separator-c: var(--blue);
+	--link-button-bgc: var(--white);
+	--color-icon-fill: var(--blue);
+	--color-icon-hover-fill: var(--white);
+
+
+	button.to-light {
+		display: none;
+		opacity: 0;
+	}
+
+	button.to-dark {
+		display: block;
+		opacity: 1;
+	}
+
+	&.mode-shifting {
+		button.to-light {
+			display: block;
+		}
+	}
+}
+
+@mixin dark-mode {
+	--text-c: var(--white);
+	--content-bgc: var(--blue);
+	--button-border-c: var(--white);
+	--button-hover-bgc: var(--white);
+	--button-hover-c: var(--blue);
+	--logo-c: var(--white);
+	--separator-c: var(--white);
+	--link-button-bgc: var(--blue-dark);
+	--color-icon-fill: var(--white);
+	--color-icon-hover-fill: var(--blue);
+
+	.color-modes button {
+		span::before {
+			filter: grayscale(1.0) brightness(10000%);
+		}
+
+		&:hover span::before {
+			filter: none;
+		}
+	}
+
+	button.to-dark {
+		display: none;
+		opacity: 0;
+	}
+
+	button.to-light {
+		display: block;
+		opacity: 1;
+	}
+
+	&.mode-shifting {
+		button.to-dark {
+			display: block;
+		}
+	}
+}
