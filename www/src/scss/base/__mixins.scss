@@ -14,11 +14,13 @@
 	button.to-light {
 		display: none;
 		opacity: 0;
+		z-index: 2;
 	}
 
 	button.to-dark {
 		display: block;
 		opacity: 1;
+		z-index: 1;
 	}
 
 	&.mode-shifting {
@@ -53,11 +55,13 @@
 	button.to-dark {
 		display: none;
 		opacity: 0;
+		z-index: 2;
 	}
 
 	button.to-light {
 		display: block;
 		opacity: 1;
+		z-index: 1;
 	}
 
 	&.mode-shifting {
