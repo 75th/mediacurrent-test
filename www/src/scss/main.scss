@@ -7,12 +7,18 @@ html, body {
 
 body {
 	@include fauna;
+
+	// These could really stay as SCSS variables, but then the colors in
+	// the mixins would be littered with #{$ugly-string-unquoting-garbage}
 	--blue: #{$blue};
 	--blue-dark: #{$blue-dark};
 	--gray-light: #{$gray-light};
 	--white: #{$white};
 	--black: #{$black};
 
+	// We want transitions when switching color modes, but not when hovering
+	// over links. So we set this variable to 0s by default, and have
+	// JavaScript temporarily raise it during mode switching.
 	--transition-duration: 0s;
 
 	// "Padding" around the content container, which doesn't actually use CSS padding
@@ -28,7 +34,6 @@ body {
 	justify-content: space-between;
 	align-items: stretch;
 	transition: color var(--transition-duration);
-	scrollbar-color: var(--scrollbar-color);
 }
 
 div.bg {

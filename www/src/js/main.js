@@ -5,11 +5,13 @@ var $$ = document.querySelectorAll.bind(document);
 	var $body = $('body');
 	$body.classList.add('js');
 
+	// Keep track of whether the user has manually chosen a color scheme,
+	// so we can stop monitoring the OS setting in the middle of a session.
 	var manualColorMode = false;
 
 	var colorModeSwitch = (toDark = true, manualSwitch = true, transition = manualSwitch) => {
-		var transitionDuration = transition ? 500 : 0;
-		var transitionDurationCSS = `${transitionDuration}ms`;
+		const transitionDuration = transition ? 500 : 0;
+		const transitionDurationCSS = `${transitionDuration}ms`;
 
 		if(manualSwitch) {
 			manualColorMode = true;
@@ -38,7 +40,6 @@ var $$ = document.querySelectorAll.bind(document);
 
 	$('button.to-dark').addEventListener('click', () => { colorModeSwitch(true); });
 	$('button.to-light').addEventListener('click', () => { colorModeSwitch(false); });
-
 
 	var prefersDark = localStorage.getItem('prefersDark');
 	prefersDark = prefersDark === 'false' ? false : prefersDark === 'true' ? true : null;
