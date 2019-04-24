@@ -119,9 +119,10 @@ nav {
 			&::before {
 				content: url('../images/mode-icon.svg');
 				display: inline-block;
+				line-height: $color-icon-x;
 				width: $color-icon-x;
 				height: $color-icon-y;
-				vertical-align: middle;
+				vertical-align: top;
 				margin-right: $color-button-pw - 2px;
 			}
 		}
