@@ -42,16 +42,6 @@
 	--color-icon-fill: var(--white);
 	--color-icon-hover-fill: var(--blue);
 
-	.color-modes button {
-		span::before {
-			filter: grayscale(1.0) brightness(10000%);
-		}
-
-		&:hover span::before {
-			filter: none;
-		}
-	}
-
 	button.to-dark {
 		display: none;
 		opacity: 0;
