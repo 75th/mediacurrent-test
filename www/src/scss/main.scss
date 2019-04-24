@@ -2,17 +2,25 @@
 @import "_global.scss"; // Keep at top of file
 
 html, body {
-	height: 100%;
+	min-height: 100vh;
 }
 
 body {
 	@include fauna;
-	--transition-duration: 0s;
 	--blue: #{$blue};
 	--blue-dark: #{$blue-dark};
 	--gray-light: #{$gray-light};
 	--white: #{$white};
 	--black: #{$black};
+
+	--transition-duration: 0s;
+
+	// "Padding" around the content container, which doesn't actually use CSS padding
+	--content-offset-n: 58px;
+	--content-offset-s: var(--content-offset-n);
+	--content-offset-w: 70px;
+	--content-offset-e: 70px;
+
 	color: var(--text-c);
 	font-size: 20px;
 	display: flex;
@@ -20,6 +28,7 @@ body {
 	justify-content: space-between;
 	align-items: stretch;
 	transition: color var(--transition-duration);
+	scrollbar-color: var(--scrollbar-color);
 }
 
 div.bg {
@@ -38,18 +47,22 @@ div.content {
 	flex-grow: 1;
 	display: grid;
 
-	// See base/__dimensions.scss for explanations of these and other variables
-	grid-template-columns: $content-offset-w  1fr  $content-offset-e;
+	grid-template-columns: var(--content-offset-w)  1fr  var(--content-offset-e);
 
 	// Split the logo into two rows, since the main content appears to be
 	// vertically centered between the midpoint of the logo and the bottom
-	// of the page
-	grid-template-rows: $content-offset-n  floor($color-button-y / 2)  ceil($color-button-y / 2)  1fr  $color-button-y  $content-offset-s;
+	// of the page.
+	// UPDATE: The above only applies to the desktop mockup. The tablet
+	// mockup is somewhat different. If there is a quantifiable rule
+	// governing the vertical position of the main content at all widths,
+	// I have failed to discover it and would need to ask the designer.
+	grid-template-rows: var(--content-offset-n)  floor($color-button-y / 2)  ceil($color-button-y / 2)  1fr  $color-button-y  var(--content-offset-s);
 }
 
 nav {
 	grid-area: 2 / 2 / span 2 / span 1;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	height: $color-button-y;
@@ -63,6 +76,7 @@ nav {
 .color-modes {
 	height: $color-button-y;
 	position: relative;
+	min-width: 175px;
 
 	button {
 		@include fauna;
@@ -107,15 +121,12 @@ nav {
 			}
 		}
 	}
-
-	span span {
-		display: none;
-	}
 }
 
 a.logo {
 	display: block;
 	outline-color: var(--button-border-c);
+	margin-bottom: 20px;
 
 	// Align letter m to left margin, not the swoosh. The width from the
 	// swoosh's left end to the letter's left end is 15% of total icon width
@@ -134,6 +145,8 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	// Some vertical padding to prevent collision with overlapping logo row
+	padding: ($color-button-y + 90px) 0px;
 }
 
 h2, h1 {

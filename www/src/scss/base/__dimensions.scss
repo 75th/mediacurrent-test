@@ -1,11 +1,8 @@
-$desktop-large-min: 1200px;
-	$desktop-small-max: ($desktop-large-min - 1px);
-
-$desktop-small-min: 980px;
-	$tablet-max: ($desktop-small-min - 1px);
+$desktop-min: 1000px;
+	$tablet-max: $desktop-min - 1px;
 
 $tablet-min: 600px;
-	$mobile-max: ($tablet-min - 1px);
+	$mobile-max: $tablet-min - 1px;
 
 
 
@@ -33,12 +30,6 @@ $tablet-min: 600px;
 //   border-box model this theme uses everywhere by default, but also sometimes in the
 //   content-box model)
 
-// "Padding" around the content container, which doesn't actually use CSS padding
-$content-offset-n: 58px;
-$content-offset-s: $content-offset-n;
-$content-offset-w: 70px;
-$content-offset-e: 63px;
-
 $color-button-y: 54px;
 $color-button-border-width: 1px;
 $color-icon-x: 32px;
@@ -49,5 +40,6 @@ $color-button-ps: ceil($color-button-p);
 $color-button-pw: floor($color-button-p) + 3px;
 $color-button-pe: $color-button-pw + 10px;
 
-
 $logo-y: 53px;
+
+$tablet-bg-y: 20vh;

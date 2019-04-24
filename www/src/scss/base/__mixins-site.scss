@@ -7,6 +7,7 @@
 	--logo-c: var(--blue);
 	--separator-c: var(--blue);
 	--link-button-bgc: var(--white);
+	--scrollbar-color: var(--white) var(--blue);
 
 	.color-modes button {
 		&:hover {
@@ -42,6 +43,7 @@
 	--logo-c: var(--white);
 	--separator-c: var(--white);
 	--link-button-bgc: var(--blue-dark);
+	--scrollbar-color: var(--blue) var(--white);
 
 	.color-modes button {
 		span::before {
