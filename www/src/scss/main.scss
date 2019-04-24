@@ -175,6 +175,10 @@ hr {
 
 	+ p {
 		margin-top: 0px;
+
+		// Wrap no later than the end of the first sentence.
+		// Measure the sentence width, divide by font size, and round up.
+		max-width: 19em;
 	}
 }
 
