@@ -7,14 +7,9 @@
 	--logo-c: var(--blue);
 	--separator-c: var(--blue);
 	--link-button-bgc: var(--white);
+	--color-icon-fill: var(--blue);
+	--color-icon-hover-fill: var(--white);
 
-	.color-modes button {
-		&:hover {
-			span::before {
-				filter: grayscale(1.0) brightness(10000%);
-			}
-		}
-	}
 
 	button.to-light {
 		display: none;
@@ -42,6 +37,8 @@
 	--logo-c: var(--white);
 	--separator-c: var(--white);
 	--link-button-bgc: var(--blue-dark);
+	--color-icon-fill: var(--white);
+	--color-icon-hover-fill: var(--blue);
 
 	.color-modes button {
 		span::before {

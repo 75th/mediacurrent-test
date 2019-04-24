@@ -99,31 +99,38 @@ nav {
 		line-height: $color-icon-y;
 		cursor: pointer;
 		outline: none;
+		text-align: left;
+		white-space: nowrap;
 
 		&:focus, &:active {
 			box-shadow: 0px 0px 0px 2px var(--button-border-c);
 		}
 
+		svg {
+			display: inline-block;
+			line-height: $color-icon-x;
+			width: $color-icon-x;
+			height: $color-icon-y;
+			vertical-align: top;
+			margin-right: $color-button-pw - 2px;
+		}
+
+		svg path {
+			fill: var(--color-icon-fill);
+			transition: fill var(--transition-duration);
+		}
+
+		span {
+			display: inline-block;
+			height: 100%;
+		}
+
 		&:hover {
 			color: var(--button-hover-c);
 			background-color: var(--button-hover-bgc);
-		}
 
-
-		span {
-			display: block;
-			width: 100%;
-			height: 100%;
-			white-space: nowrap;
-
-			&::before {
-				content: url('../images/mode-icon.svg');
-				display: inline-block;
-				line-height: $color-icon-x;
-				width: $color-icon-x;
-				height: $color-icon-y;
-				vertical-align: top;
-				margin-right: $color-button-pw - 2px;
+			svg path {
+				fill: var(--color-icon-hover-fill);
 			}
 		}
 	}

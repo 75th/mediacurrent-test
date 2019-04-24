@@ -4,9 +4,11 @@ var $$ = document.querySelectorAll.bind(document);
 (() => {
 	var $body = $('body');
 
+	var colorIcon = '<svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m15 0a15 15 0 1 0 15 15 15 15 0 0 0 -15-15zm0 1.76a13.24 13.24 0 0 1 0 26.48z" fill="#003954"/></svg>';
+
 	// Add buttons
 	$('div.color-modes').innerHTML =
-		'<button class="to-dark"><span>Dark Mode</button><button class="to-light"><span>Light Mode</span></button>'
+		`<button class="to-dark">${colorIcon}<span>Dark Mode</button><button class="to-light">${colorIcon}<span>Light Mode</span></button>`
 	;
 
 	// Keep track of whether the user has manually chosen a color scheme,
